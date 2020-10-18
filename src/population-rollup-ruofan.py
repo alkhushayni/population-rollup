@@ -1,6 +1,5 @@
+# import the library and the dataset 
 import pandas as pd
-
-# import the dataset 
 df = pd.read_csv("./input/censustract-00-10.csv")
 
 # select the columns we need
