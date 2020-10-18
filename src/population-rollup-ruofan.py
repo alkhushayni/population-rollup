@@ -1,3 +1,4 @@
+pip install pandas
 import pandas as pd
 
 # import the dataset 
