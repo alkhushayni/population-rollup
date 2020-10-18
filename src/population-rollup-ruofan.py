@@ -1,7 +1,7 @@
 import pandas as pd
 
 # import the dataset 
-df = pd.read_csv("C:/Users/Ruofan_2020_Desktop/Downloads/InsightDataScience/censustract-00-10.csv")
+df = pd.read_csv("./input/censustract-00-10.csv")
 
 # select the columns we need
 df_select = df[['CBSA09', 'CBSA_T', 'POP00', 'POP10', 'PPCHG']]
@@ -47,4 +47,4 @@ df_report['PPCHG'] = round(df_report['PPCHG'], 2)
 df_report = df_report.sort_values(by='CBSA09', ascending=True)
 
 # write df_report to report.csv without index
-df_report.to_csv("C:/Users/Ruofan_2020_Desktop/Downloads/InsightDataScience/report.csv", index=False, header=False)
+df_report.to_csv("./output/report.csv", index=False, header=False)
