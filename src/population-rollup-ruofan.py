@@ -1,4 +1,3 @@
-pip install pandas
 import pandas as pd
 
 # import the dataset 
@@ -15,6 +14,7 @@ df_select = df_select.dropna()
 df_select.info(verbose=True)
 
 # get the index of the rows that cannot calculate PPCHG and drop them
+df_select['PPCHG'] = df_select['PPCHG'].astype(str)
 i = df_select[df_select.PPCHG=='(X)'].index
 df_select = df_select.drop(i)
 
@@ -24,7 +24,7 @@ df_select['PPCHG'] = df_select['PPCHG'].str.replace(",", "")
 # change PPCHG to numeric
 df_select['PPCHG'] = pd.to_numeric(df_select['PPCHG'])
 
-# groupby
+# group by
 df_groupby = df_select.groupby('CBSA_T').agg({
     'CBSA09':['mean','count'],
     'POP00':'sum',
