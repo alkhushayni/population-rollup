@@ -8,7 +8,7 @@ PPCHG = []
 
 index_id = []
 
-file_to_open = "C:/Users/Ruofan_2020_Desktop/Downloads/InsightDataScience/censustract-00-10.csv"
+file_to_open = "./input/censustract-00-10.csv"
 with open(file_to_open, "r") as this_csv_file:
     pop_data = csv.reader(this_csv_file, delimiter=',')
     
@@ -95,6 +95,6 @@ with open(file_to_open, "r") as this_csv_file:
     for g in range(len(CBSA09_)):
         report.append([int(CBSA09_[g]), CBSA_T_[g], COUNT_[g], POP00_[g], POP10_[g], PPCHG_[g]])
 
-with open("C:/Users/Ruofan_2020_Desktop/Downloads/InsightDataScience/report.csv", "wt", newline="") as file:
+with open("./output/report.csv", "wt", newline="") as file:
     writer = csv.writer(file, delimiter=",")
     writer.writerows(report)
