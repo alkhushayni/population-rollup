@@ -1,6 +1,6 @@
 import csv
 
-file_to_open = "C:/Users/Ruofan_2020_Desktop/Downloads/InsightDataScience/censustract-00-10.csv"
+file_to_open = "./input/censustract-00-10.csv"
 with open(file_to_open, "r") as this_csv_file:
     pop_data = csv.reader(this_csv_file, delimiter=",")
     
@@ -79,7 +79,7 @@ with open(file_to_open, "r") as this_csv_file:
     for i in range(n_code):
         report.append([int(CBSA09_new[i]), CBSA_T_new[i], COUNT_new[i], POP00_new[i], POP10_new[i], PPCHG_new[i]])
 
-file_to_save = "C:/Users/Ruofan_2020_Desktop/Downloads/InsightDataScience/report.csv"
+file_to_save = "./output/report.csv"
 with open(file_to_save, "wt", newline="") as file:
     writer = csv.writer(file, delimiter=",")
     writer.writerows(report)
