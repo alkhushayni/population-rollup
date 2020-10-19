@@ -12,4 +12,4 @@ Insight Data Engineering - Coding Challenge
 
 5. I did 2 tests locally, and I provided the results in the directory "insight_testsuite/tests". (I provided the result with the input of the whole dataset as my 2nd try.)
 
-6. Big update! I created a new version without using pandas. The new version is named "population-rollup-no-Pandas.py" and I used this new version and passed your tester.
+6. Big update! I created a new version without using pandas. The new version is named "population-rollup-no-Pandas.py". I used this new version and finally passed the tester.
