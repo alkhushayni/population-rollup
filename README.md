@@ -10,4 +10,4 @@ Insight Data Engineering - Coding Challenge
 
 4. I cannot pass your tester because it gave me the error "ModuleNotFoundError: No module named 'pandas'", which means that your tester service does not support pandas I think.
 
-5. I did three tests locally, and I provided the results in the directory "insight_testsuite/tests", and I provided the result with the input of the whole dataset as my fourth try.
+5. I did 2 tests locally, and I provided the results in the directory "insight_testsuite/tests". (I provided the result with the input of the whole dataset as my 2nd try.)
